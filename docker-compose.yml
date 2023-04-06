@@ -1,0 +1,9 @@
+services:
+  xampp:
+    image: tomsik68/xampp:8
+    volumes:
+      - ./www:/www
+    restart: always
+    ports:
+      - "41061:22"
+      - "41062:80"
